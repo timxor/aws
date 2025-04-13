@@ -1,0 +1,22 @@
+{
+  "method": "POST",
+  "url": "https://yourapp.com/webhook",
+  "headers": {
+    "Content-Type": "application/json",
+    "User-Agent": "Stripe/v1",
+    "X-Signature": "Stripe-Signature for HMAC verification"
+  },
+  "body": {
+    "id": "evt_123456789",
+    "type": "payment_intent.succeeded",
+    "data": {
+      "object": {
+        "id": "pi_123456789",
+        "amount": 1000,
+        "currency": "usd",
+        "status": "succeeded"
+      }
+    },
+    "created": 1712978400
+  }
+}
